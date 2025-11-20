@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-factory"
+version = "0.1.0"
+description = "Agent Factory built on Google's Agent Development Kit (ADK)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Kingsley Chukwuma" }
+]
+dependencies = [
+  "google-genai>=0.3.0",
+  "python-dotenv>=1.0.0",
+]
+
+[project.urls]
+homepage = "https://github.com/KingsleyEbukaChukwuma/agent-factory"
+
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
